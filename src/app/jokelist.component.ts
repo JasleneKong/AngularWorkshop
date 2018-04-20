@@ -6,6 +6,7 @@ import {Joke } from './joke.component';
 @Component({
     selector: 'joke-list',
     template: `
+        <app-joke-form>joke-form works!</app-joke-form>
         <joke *ngFor="let j of jokes" [joke]="j"></joke>
     `
 })
